@@ -1,5 +1,6 @@
 <?php
 include('./config/conf.php');
+session_start();
 
 //declare and initiate
 $user = "";
@@ -36,7 +37,9 @@ function checkAuthent($u, $p, $conn)
             ";
         } else {
             //echo "FOUND!";
-            
+            //create auth sess
+            $_SESSION["username"] = $u;
+            $_SESSION["password"] = $p;
         }
     }
 }
