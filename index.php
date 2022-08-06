@@ -1,4 +1,7 @@
 <?php
+include('./config/conf.php');
+
+
 
 ?>
 <html>
