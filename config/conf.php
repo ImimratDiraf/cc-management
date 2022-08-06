@@ -1,7 +1,7 @@
 <?php
 
 // Create connection
-$conn = mysqli_connect('localhost', 'root', '');
+$conn = mysqli_connect('localhost', 'root', '', 'sinclaire_management');
 
 // Check connection
 if (!$conn) {
